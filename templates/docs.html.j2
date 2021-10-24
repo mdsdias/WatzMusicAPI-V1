@@ -1,0 +1,20 @@
+<html>
+
+<head>
+</head>
+<link rel="stylesheet" href="https://www.legumii.repl.co/style.css" type="text/css">
+
+<body class="dark">
+	<header align="middle" style="position: absolute; backdrop-filter: blur(20px); background-color: rgb(0, 0, 0, 0.9);">
+		<h1>Bem vindo a verção V1 da API</h1>
+		<h2>Estamos trabalhando nisso ainda ok?</h2>
+	</header>
+	{% for i in docs %}
+	<div align="middle" style="transform: translateY(200%)">
+		<h3 id=" {{i.route}} "> {{ i.name }} <code> {{i.route}} </code> </h3>
+            <p> {{ i.desc }} </p>
+        </div>
+    {% endfor %}
+</body>
+
+</html>
